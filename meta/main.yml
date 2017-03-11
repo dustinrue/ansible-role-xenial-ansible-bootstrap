@@ -1,15 +1,12 @@
 ---
 galaxy_info:
   author: Dustin Rue
-  description: Simple MySQL Installer.
+  description: Ensures Ansible will run properly against a Ubuntu 16.04 (Xenial) box.
   license: MIT
-  min_ansible_version: 0.1
+  min_ansible_version: 0.2
   platforms:
   - name: Ubuntu
     versions:
     - xenial
-    - trusty
   galaxy_tags:
     - installer
-    - web
-    - mysql
