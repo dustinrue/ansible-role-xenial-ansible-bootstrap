@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Dustin Rue
+  description: Simple MySQL Installer.
+  license: MIT
+  min_ansible_version: 0.1
+  platforms:
+  - name: Ubuntu
+    versions:
+    - xenial
+    - trusty
+  galaxy_tags:
+    - installer
+    - web
+    - mysql

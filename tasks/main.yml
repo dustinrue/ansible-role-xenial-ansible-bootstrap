@@ -1,0 +1,9 @@
+- name: Install python 2.7 on xenial
+  raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+  args:
+    creates: /usr/bin/python
+
+- name:
+  apt: name={{ item }} state=installed
+  with_items:
+    - python-mysqldb
