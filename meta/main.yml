@@ -3,10 +3,12 @@ galaxy_info:
   author: Dustin Rue
   description: Ensures Ansible will run properly against a Ubuntu 16.04 (Xenial) box.
   license: MIT
-  min_ansible_version: 0.2
+  min_ansible_version: 0.3
   platforms:
   - name: Ubuntu
     versions:
     - xenial
+  - name: EL
+    - 7
   galaxy_tags:
     - installer

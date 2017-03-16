@@ -2,8 +2,10 @@
   raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
   args:
     creates: /usr/bin/python
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
 
 - name:
   apt: name={{ item }} state=installed
   with_items:
     - python-mysqldb
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"
