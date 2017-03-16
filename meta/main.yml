@@ -9,6 +9,7 @@ galaxy_info:
     versions:
     - xenial
   - name: EL
-    - 7
+    versions:
+      - 7
   galaxy_tags:
     - installer
